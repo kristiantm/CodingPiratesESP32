@@ -12,7 +12,9 @@ U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 #define JOYSTICK_RIGHT 15
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
-#define BUZZER_PIN = 13;
+const int buzzerPin = 13;
+
+
 
 // Game variables
 int paddleLeftY = 24;         // Initial paddle position (tuned for 64px height)
@@ -37,6 +39,7 @@ void setup() {
 }
 
 void loop() {
+  song(buzzerPin);
 
   if(startScreen) {
     // Show startscreen
@@ -149,13 +152,390 @@ void gameIteration() {
 
 // Function to play a bleep sound
 void playBleep() {
-  tone(13, 1000, 100); // Play a 1000 Hz tone for 100 ms
+  tone(buzzerPin, 1000, 100); // Play a 1000 Hz tone for 100 ms
 }
 
 // Function to play a bleep sound
 void playGameOver() {
-  tone(13, 1000, 100); // Play a 1000 Hz tone for 100 ms
-  tone(13, 800, 100); // Play a 1000 Hz tone for 100 ms
-  tone(13, 600, 300); // Play a 1000 Hz tone for 100 ms
+  tone(buzzerPin, 1000, 100); // Play a 1000 Hz tone for 100 ms
+  tone(buzzerPin, 800, 100); // Play a 1000 Hz tone for 100 ms
+  tone(buzzerPin, 600, 300); // Play a 1000 Hz tone for 100 ms
 
 }
+
+
+void song(int buzzerPin){
+  
+  tone(buzzerPin, 330);
+  delay(529);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(794);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 370);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(618);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 587);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(606);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 370);
+  delay(641);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 554);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 587);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(265);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(265);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 370);
+  delay(265);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(647);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(253);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(265);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(229);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(229);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(224);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(229);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(218);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(224);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(265);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(647);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 523);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 392);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 440);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 494);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(212);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 220);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 196);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 220);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 220);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 196);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 175);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 196);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 165);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 175);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 349);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 330);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 294);
+  delay(782);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 262);
+  delay(776);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 220);
+  delay(176);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 196);
+  delay(1235);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 175);
+  delay(353);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 196);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 233);
+  delay(706);
+  noTone(buzzerPin);
+
+  tone(buzzerPin, 220);
+  delay(3121);
+  noTone(buzzerPin);
+}
+
