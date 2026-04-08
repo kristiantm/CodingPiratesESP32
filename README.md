@@ -4,8 +4,10 @@ We are using an <a href="https://www.amazon.de/-/da/Dual-Core-mikrocontroller-de
 - with a <a href="https://controllerstech.com/arduino-sh1106-oled-display-tutorial/">SH1106 OLED Screen (128x64)</a> to make games and graphics.
 - and a <a href="https://www.amazon.de/-/da/dp/B0GH737DYR/ref=sr_1_33?crid=2BU5RMWE7GCXJ&dib=eyJ2IjoiMSJ9.WBq-z7asGubuqJKDdtQlUsemBHVaDskvi46CrqaVkcOqyTxGIEVxno09EHIBMXKvaiqOwlG3CQgzIWy5Raqyrsa1r6AyqC2pFX5Yd9eLDztZFVglP3CjM-2pDro0lqcWimDtrwgNr3vNkhgXBg6v-gUxfIln6_eMkBXvID1N2eb_S4QoStBxt60GZzrScM9oUEFf4oHnebJxNy5DozGV6-HVrpKden58vvaA-FYWognbPNQMP-MIYEl736Aguxobk0vqzFv7ogoxGFEV_8mNf7FSBDRkfsKJiRDcf5ATYuU.wQ-Crp-NEDpDnu80VTJZsPpuO170-etqJV-sftCX5tw&dib_tag=se&keywords=car+kit+arduino&qid=1775676574&sprefix=car+kit+arduino%2Caps%2C131&sr=8-33">Arduino car kit</a> to make self-driving cars
 
-Good resources for learning animation is: <br>
+Test your ESP32 designs and code virtually here:
 https://wokwi.com/projects/new/esp32 <br>
+
+Good resources for learning animation is: <br>
 https://animator.wokwi.com/ (animating icons) <br> 
 https://javl.github.io/image2cpp/ (converting pictures to bytearrays) <br>
 https://wokwi.com/projects/402163384463272961 (an online simulator of a screen)
